@@ -1,22 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import WavingFlag from "@garvae/react-waving-flag";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <WavingFlag
+          flag="https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg"
+          height={260}
+          width={300}
+          boxShadowColor='#FFFFFF'
+          curvature = {6}
+          isShadow = {false}
+          fromLeft = {true}
+        />
       </header>
     </div>
   );
